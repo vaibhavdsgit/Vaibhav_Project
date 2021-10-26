@@ -23,6 +23,7 @@ public class GenDemo {
 //		myMarks.add("abc");
 		myMarks.add(25);
 		System.out.println(myMarks);
+		System.out.println("Hii");
 
 	}
 
