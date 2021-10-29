@@ -23,7 +23,7 @@ public class ExPatDemo implements Runnable {
 		ExPatDemo exp = new ExPatDemo();
 //
 ////        	 1. Using newSingleThreadExecutor
-//		ExecutorService exService = Executors.newSingleThreadExecutor();	//Only one Thread 
+		ExecutorService exService = Executors.newSingleThreadExecutor();	//Only one Thread 
 //
 ////        	2. Using newCachedThreadPool
 //        	ExecutorService exService = Executors.newCachedThreadPool();	//Multiple Thread dependent on the loop, (i<10)-->10 Thread 
@@ -32,7 +32,7 @@ public class ExPatDemo implements Runnable {
 //        	ExecutorService exService = Executors.newFixedThreadPool(3);	//3 threads, dependent on the argument given
 //
 ////        	4. Using newScheduledThreadPool
-        	ExecutorService exService = Executors.newScheduledThreadPool(2);	//Will be scheduled one after another
+//        	ExecutorService exService = Executors.newScheduledThreadPool(2);	//Will be scheduled one after another
 ////        	ScheduledExecutorService exService = Executors.newScheduledThreadPool(2);
 //
 		for (int i = 1; i <= 10; i++) {
